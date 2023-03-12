@@ -83,6 +83,18 @@ label {
     display: block;
 }
 
+.bayan-item input:checked+ .bayan-title+ .bayan-meme,
+.bayan-item:hover > .bayan-meme {
+    height: auto;
+    width: 70%;
+    height: 70%;
+}
+
+.bayan-item input:checked+ .bayan-title> .bayan-icon,
+.bayan-item:hover > .bayan-title > .bayan-icon {
+    transform: rotate(45deg);
+}
+
 
 
 
