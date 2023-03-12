@@ -34,11 +34,15 @@ h1 {
     padding: 0;
 }
 
+li {
+    list-style: none;
+}
+
 .bayan-item {
     display: flex;
     flex-direction: column;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     border-top: 1px solid gray;
     cursor: pointer;
 }
@@ -54,10 +58,10 @@ input {
     display: none;
 }
 
-label {
+.title {
     font-size: 30px;
     font-weight: 400;
-    padding-bottom: 2vh;
+    padding-bottom: 1vh;
     cursor: pointer;
     color: blue;
 }
@@ -75,11 +79,11 @@ label {
     transition: width 0.1s, height 0.1s;
 }
 
-.bayan-list:hover > .bayan-item > .bayan-title > label {
+.bayan-list:hover > li > .bayan-item > .bayan-title > .title {
     color: black;
 }
 
-.bayan-list:hover > .bayan-item > .bayan-title > .bayan-icon {
+.bayan-list:hover > li > .bayan-item > .bayan-title > .bayan-icon {
     display: block;
 }
 
@@ -93,6 +97,10 @@ label {
 .bayan-item input:checked+ .bayan-title> .bayan-icon,
 .bayan-item:hover > .bayan-title > .bayan-icon {
     transform: rotate(45deg);
+}
+
+.bayan-item:active > .bayan-meme{
+    opacity: 0.7;
 }
 
 
