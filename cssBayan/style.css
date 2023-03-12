@@ -27,6 +27,7 @@ body {
 h1 {
     font-size: 40px;
     font-weight: 900;
+    color: black;
 }
 
 .bayan-list {
@@ -58,13 +59,31 @@ label {
     font-weight: 400;
     padding-bottom: 2vh;
     cursor: pointer;
+    color: blue;
+}
+
+.bayan-icon {
+    transition: transform 0.3s;
+    display: none;
 }
 
 .bayan-meme {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 0;
+    height: 0;
+    transition: width 0.1s, height 0.1s;
 }
+
+.bayan-list:hover > .bayan-item > .bayan-title > label {
+    color: black;
+}
+
+.bayan-list:hover > .bayan-item > .bayan-title > .bayan-icon {
+    display: block;
+}
+
+
 
 
 
